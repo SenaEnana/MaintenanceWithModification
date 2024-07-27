@@ -6,14 +6,13 @@
             <div class="border-b px-4 py-6">
                 <a href="/"
                     class="flex items-center justify-center md:text-xl xl:text-2xl font-semibold dark:text-white">
-                    <img src="/static/images/logo.png" class="mr-3 h-9 xl:h-11" alt="FlowBite Logo">
-                    <span>AB Company</span>
+                    <span>Maintenance Request Management System</span>
                 </a>
             </div>
 
             <div class=" px-6 pt-6 xl:pb-3 space-y-6 sm:px-8">
                 <h3 class="text-lg xl:text-xl text--center font-medium text-gray-900 dark:text-white">
-                    Login in to start your session
+                    Login
                 </h3>
 
                 @if (session('status'))
@@ -47,7 +46,7 @@
                         </div>
                     </div>
 
-                    <x-inputs.button-primary class="w-full mt-8" wire:loading.attr="disabled">
+                    <x-inputs.button-primary class="w-full mt-8 btn-success" wire:loading.attr="disabled">
                         <i class="fa-solid fa-right-to-bracket mr-2"></i>{{ __('Login') }}
                     </x-inputs.button-primary>
 
@@ -55,10 +54,6 @@
                         <a class="underline text-gray-600 text-sm" href="{{ route('register') }}">
                             Don't have an account?
                         </a>
-                    </div>
-
-                    <div class="flex justify-center text-sm text-gray-500 mt-6">
-                        &copy 2023 <a class="ml-2 text-primary-500" href="">AB Company plc</a>.
                     </div>
                 </form>
             </div>

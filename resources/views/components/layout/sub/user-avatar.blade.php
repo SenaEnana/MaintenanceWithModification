@@ -29,16 +29,6 @@
                     <i class="fa-solid fa-chevron-right fa-sm mx-2 text-gray-400"></i>
                 </a>
             </li>
-            <li>
-                <a href="#"
-                    class="flex justify-between items-center py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                    <span class="flex items-center">
-                        <i class="fa-solid fa-gear  fa-lg mr-2 text-primary-600 dark:text-primary-500"></i>
-                        {{ __('Settings') }}
-                    </span>
-                    <i class="fa-solid fa-chevron-right fa-sm mx-2 text-gray-400"></i>
-                </a>
-            </li>
         </ul>
         <ul class="py-1 text-gray-700 dark:text-gray-300" aria-labelledby="dropdown">
             <li>

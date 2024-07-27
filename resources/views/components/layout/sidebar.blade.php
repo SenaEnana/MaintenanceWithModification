@@ -8,8 +8,7 @@
             <h5 id="drawer-navigation-label"
                 class="text-base font-semibold text-gray-500 uppercase dark:text-gray-400 mr-auto">
                 <a href="https://flowbite.com" class="flex items-center justify-between">
-                    <img src="/static/images/logo.png" class="mr-3" alt="Flowbite Logo" />
-                    <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">AB Company</span>
+                    <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">MRM System</span>
                 </a>
             </h5>
             <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
@@ -28,31 +27,30 @@
             class="overflow-y-auto py-4 px-3 h-full bg-white dark:bg-gray-800">
             <ul class="space-y-2">
 
-                <x-layout.sub.sidebar-item label="{{ __('Dashboard') }}" icon="fa-solid fa-gauge"
+                <x-layout.sub.sidebar-item label="{{ __('Admin Dashboard') }}" icon="fa-solid fa-gauge"
                     route="{{ route('dashboard') }}" />
 
                 <x-layout.sub.sidebar-collapse id="pages" label="{{ __('Pages') }}" icon="fa-solid fa-pager">
-                    <x-layout.sub.sidebar-collapse-item label="{{ __('Settings') }}" route="#" />
-                    <x-layout.sub.sidebar-collapse-item label="{{ __('Kanban') }}" route="#" />
-                    <x-layout.sub.sidebar-collapse-item label="{{ __('Calendar') }}" route="#" />
+                    <x-layout.sub.sidebar-collapse-item label="{{ __('Add job types') }}" route="jobTypes" />
+                    <x-layout.sub.sidebar-collapse-item label="{{ __('Add equipment') }}" route="equipments" />
+                    <x-layout.sub.sidebar-collapse-item label="{{ __('Add service location') }}" route="serviceLocation" />
+                    <x-layout.sub.sidebar-collapse-item label="{{ __('Add request type') }}" route="requestType" />
                 </x-layout.sub.sidebar-collapse>
 
-
-                <x-layout.sub.sidebar-collapse id="sa" label="{{ __('Sales') }}"
-                    icon="fa-solid fa-pagerfa-solid fa-sack-dollar">
-                    <x-layout.sub.sidebar-collapse-item label="{{ __('Products') }}" route="#" />
-                    <x-layout.sub.sidebar-collapse-item label="{{ __('Billings') }}" route="#" />
+                <x-layout.sub.sidebar-collapse id="sa" label="{{ __('Manage User') }}"
+                icon="fa-solid fa-pager">
+                    <x-layout.sub.sidebar-collapse-item label="{{ __('Add customers') }}" route="/customers" />
+                    <x-layout.sub.sidebar-collapse-item label="{{ __('Add technicians') }}" route="/technicians" />
+                    <x-layout.sub.sidebar-collapse-item label="{{ __('Send Request') }}" route="/requests" />
                 </x-layout.sub.sidebar-collapse>
             </ul>
 
             <ul class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700">
 
-                <x-layout.sub.sidebar-item label="{{ __('Docs') }}" icon="fa-regular fa-file-word" route="#" />
+                <x-layout.sub.sidebar-item label="{{ __('List of customers') }}" icon="fa-regular fa-file-word" route="/customerList" />
 
-                <x-layout.sub.sidebar-item label="{{ __('Components') }}" icon="fa-solid fa-box" route="#" />
-
-                <x-layout.sub.sidebar-item label="{{ __('Help') }}" icon="fa-solid fa-circle-question"
-                    route="#" />
+                <x-layout.sub.sidebar-item label="{{ __('List of technicians') }}" icon="fa-solid fa-box" route="/technicianList" />
+                <x-layout.sub.sidebar-item label="{{ __('List of requests') }}" icon="fa-solid fa-box" route="/requestList" />
             </ul>
         </div>
     </aside>

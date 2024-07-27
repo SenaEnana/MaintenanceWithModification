@@ -16,15 +16,10 @@
 
             <strong><i class="fa-solid fa-user-graduate mr-1"></i> Education</strong>
             <p class="text-gray-500 mt-1">
-                BSc Computer Science from Hawassa University
+                If you have education information it will be displayed here!
             </p>
 
             <hr class="h-px w-full my-5 bg-gray-200 border-0 dark:bg-gray-700">
-
-            <strong><i class="fas fa-map-marker-alt mr-1"></i> Location</strong>
-            <p class="text-gray-500 mt-1">
-                Addis Ababa, Ethiopia
-            </p>
         </x-card>
 
         <x-card class="col-span-12 md:col-span-7 xl:col-span-8 xxl:col-span-9 px-0 p">

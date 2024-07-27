@@ -1,6 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Livewire\CustomerComponent;
+use App\Livewire\JobTypeComponent;
+use App\Livewire\ServiceLocationComponent;
+use App\Livewire\EquipmentComponent;
+use App\Livewire\RequestTypeComponent;
+use App\Livewire\TechnicianComponent;
+use App\Livewire\RequestComponent;
+use App\Livewire\CustomerList;
+use App\Livewire\TechnicianList;
+use App\Livewire\RequestList;
 
 use function Termwind\render;
 
@@ -37,3 +47,13 @@ Route::middleware([
         return view('pages.dashboard');
     })->name('dashboard');
 });
+Route::get('/customers', CustomerComponent::class)->name('customer-component');
+Route::get('/jobTypes', JobTypeComponent::class)->name('job-type-component');
+Route::get('/serviceLocation', ServiceLocationComponent::class)->name('service-location-component');
+Route::get('/equipments', EquipmentComponent::class)->name('equipment-component');
+Route::get('/requestType', RequestTypeComponent::class)->name('request-type-component');
+Route::get('/technicians', TechnicianComponent::class)->name('technician-component');    
+Route::get('/requests', RequestComponent::class)->name('request-component');
+Route::get('/customerList', CustomerList::class)->name('customer-list');
+Route::get('/technicianList', TechnicianList::class)->name('technician-list');
+Route::get('/requestList', RequestList::class)->name('request-list');

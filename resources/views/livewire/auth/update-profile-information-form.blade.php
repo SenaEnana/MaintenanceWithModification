@@ -3,10 +3,6 @@
         {{ __('Your profile Information') }}
     </h4>
 
-    <p class="mt-1 text-sm text-gray-600">
-        {{ __('Update your account\'s profile information and email address.') }}
-    </p>
-
     <form class="mt-6 col-span-4 w-full xl:w-3/4" wire:submit.prevent="updateProfileInformation" method="POST">
         @csrf
 
@@ -16,24 +12,24 @@
         <x-inputs.form-input type="email" id="email" label="Email" placeholder="Enter your email" required
             extra="wire:model.defer='state.email'" />
 
-        @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::emailVerification()) &&
+        <!-- @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::emailVerification()) &&
                 !$this->user->hasVerifiedEmail())
             <p class="text-sm mt-2">
-                {{ __('Your email address is unverified.') }}
+                {{ __('Your email address is unverified.') }} -->
 
-                <button type="button"
+                <!-- <button type="button"
                     class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     wire:click.prevent="sendEmailVerification">
                     {{ __('Click here to re-send the verification email.') }}
-                </button>
-            </p>
+                </button> -->
+            <!-- </p>
 
             @if ($this->verificationLinkSent)
                 <p class="mt-2 font-medium text-sm text-green-600">
                     {{ __('A new verification link has been sent to your email address.') }}
                 </p>
             @endif
-        @endif
+        @endif -->
 
         <x-inputs.button-primary class="mt-4" wire:loading.attr="disabled" wire:target="updateProfileInformation">
             <i class="fa-solid fa-pen-to-square mr-2" wire:loading.class="fa-beat-fade"
