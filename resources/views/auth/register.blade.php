@@ -6,8 +6,7 @@
             <div class="border-b px-4 py-6">
                 <a href="/"
                     class="flex items-center justify-center md:text-xl xl:text-2xl font-semibold dark:text-white">
-                    <img src="/static/images/logo.png" class="mr-3 h-9 xl:h-11" alt="FlowBite Logo">
-                    <span>AB Company</span>
+                    <span>MRM</span>
                 </a>
             </div>
 
@@ -31,7 +30,7 @@
                     <x-inputs.form-input type="password" id="password_confirmation" label="Confirm Password"
                         placeholder="Confirm your password" required />
 
-                    <x-inputs.button-primary class="w-full mt-4" wire:loading.attr="disabled">
+                    <x-inputs.button-primary class="w-full mt-4 btn btn-success" wire:loading.attr="disabled">
                         <i class="fa-solid fa-plus mr-2"></i>{{ __('Create Account') }}
                     </x-inputs.button-primary>
 
@@ -39,10 +38,6 @@
                         <a class="underline text-gray-600 text-sm" href="{{ route('login') }}">
                             Already have anaccount?
                         </a>
-                    </div>
-
-                    <div class="flex justify-center text-sm text-gray-500 mt-6">
-                        &copy 2023 <a class="ml-2 text-primary-500" href="">AB Company plc</a>.
                     </div>
                 </form>
             </div>

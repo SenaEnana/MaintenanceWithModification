@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h2 class="card-title"><i class="fas fa-users"></i> Total Customers</h2>
+                            <h2 class="card-title"><i class="fas fa-users"></i> Total Number Of Customers</h2>
                             <p class="card-text display-4">{{ $customerCount }}</p>
                         </div>
                         <div class="icon">
@@ -20,11 +20,11 @@
         </div>
         <!-- Technician Count Card -->
         <div class="col-md-4">
-            <div class="card text-white bg-success mb-3">
+            <div class="card text-white bg-secondary mb-3">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h2 class="card-title"><i class="fas fa-tools"></i> Total Technicians</h2>
+                            <h2 class="card-title"><i class="fas fa-tools"></i> Total Number Of Technicians</h2>
                             <p class="card-text display-4">{{ $technicianCount }}</p>
                         </div>
                         <div class="icon">
@@ -36,7 +36,7 @@
         </div>
         <!-- Maintenance Request Count Card -->
         <div class="col-md-4">
-            <div class="card text-white bg-warning mb-3">
+            <div class="card text-white bg-success mb-3">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
