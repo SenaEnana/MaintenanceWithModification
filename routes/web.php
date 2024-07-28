@@ -11,6 +11,7 @@ use App\Livewire\RequestComponent;
 use App\Livewire\CustomerList;
 use App\Livewire\TechnicianList;
 use App\Livewire\RequestList;
+use App\Livewire\Dashboard;
 
 use function Termwind\render;
 
@@ -57,3 +58,5 @@ Route::get('/requests', RequestComponent::class)->name('request-component');
 Route::get('/customerList', CustomerList::class)->name('customer-list');
 Route::get('/technicianList', TechnicianList::class)->name('technician-list');
 Route::get('/requestList', RequestList::class)->name('request-list');
+Route::get('/dashboards', Dashboard::class)->name('dashboard');
+
