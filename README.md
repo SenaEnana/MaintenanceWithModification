@@ -38,5 +38,51 @@ Follow these steps to set up the project locally on your machine.
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/maintenance-system.git](https://github.com/yourusername/maintenance-system.git)
-   cd maintenance-system
+   git clone https://github.com/SenaEnana/Maintenance-Request-Management-System
+   cd Maintenance-Request-Management-System
+   ```
+2. **Install PHP dependencies:
+   ```bash
+   composer install
+   ```
+3. **Install frontend assets:
+   ```bash
+   npm install && npm run dev
+   ```
+4. **Configure Environment:
+Copy the example environment file and generate an application key:
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+4. **Set up the Database:
+   Open your .env file and configure your database connection details:
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=maintenance_db
+   DB_USERNAME=root
+   DB_PASSWORD=
+
+5. **Run Migrations & Seeders:
+   Create the database tables and populate mock data (if applicable):
+   ```bash
+   php artisan migrate --seed
+   ```
+6. **Launch the Application:
+   Start the Laravel development server:
+   ```bash
+   php artisan serve
+   ```
+   Visit http://127.0.0.1:8000 in your web browser.
+
+## 💡 Key Takeaways from Building This
+* Mastered Livewire’s lifecycle hooks and query string bindings for seamless search and filtering.
+
+* Implemented Laravel Eloquent relationships to cleanly link maintenance requests to specific users and categories.
+
+* Utilized Bootstrap components (modals, alerts, tables) alongside Livewire events to create a highly responsive user experience.
+
+## 📝 License
+
+This project is open-source and available under the MIT License.
