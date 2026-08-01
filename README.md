@@ -57,6 +57,7 @@ php artisan key:generate
 ```
 4. **Set up the Database:**
    Open your .env file and configure your database connection details:
+   
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
@@ -64,12 +65,12 @@ php artisan key:generate
    DB_USERNAME=root
    DB_PASSWORD=
 
-5. **Run Migrations & Seeders:**
+6. **Run Migrations & Seeders:**
    Create the database tables and populate mock data (if applicable):
    ```bash
    php artisan migrate --seed
    ```
-6. **Launch the Application:**
+7. **Launch the Application:**
    Start the Laravel development server:
    ```bash
    php artisan serve
