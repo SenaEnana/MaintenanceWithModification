@@ -50,7 +50,9 @@ Follow these steps to set up the project locally on your machine.
    npm install && npm run dev
    ```
 4. **Configure Environment:**
+   
 Copy the example environment file and generate an application key:
+
 ```bash
 cp .env.example .env
 php artisan key:generate
@@ -72,18 +74,23 @@ php artisan key:generate
    DB_PASSWORD=
 
 6. **Run Migrations & Seeders:**
+   
    Create the database tables and populate mock data (if applicable):
+   
    ```bash
    php artisan migrate --seed
    ```
-7. **Launch the Application:**
+8. **Launch the Application:**
+   
    Start the Laravel development server:
+   
    ```bash
    php artisan serve
    ```
    Visit http://127.0.0.1:8000 in your web browser.
 
 ## 💡 Key Takeaways from Building This
+
 * Mastered Livewire’s lifecycle hooks and query string bindings for seamless search and filtering.
 
 * Implemented Laravel Eloquent relationships to cleanly link maintenance requests to specific users and categories.
