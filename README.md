@@ -41,21 +41,21 @@ Follow these steps to set up the project locally on your machine.
    git clone https://github.com/SenaEnana/Maintenance-Request-Management-System
    cd Maintenance-Request-Management-System
    ```
-2. **Install PHP dependencies:
+2. **Install PHP dependencies:**
    ```bash
    composer install
    ```
-3. **Install frontend assets:
+3. **Install frontend assets:**
    ```bash
    npm install && npm run dev
    ```
-4. **Configure Environment:
+4. **Configure Environment:**
 Copy the example environment file and generate an application key:
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
-4. **Set up the Database:
+4. **Set up the Database:**
    Open your .env file and configure your database connection details:
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
@@ -64,12 +64,12 @@ php artisan key:generate
    DB_USERNAME=root
    DB_PASSWORD=
 
-5. **Run Migrations & Seeders:
+5. **Run Migrations & Seeders:**
    Create the database tables and populate mock data (if applicable):
    ```bash
    php artisan migrate --seed
    ```
-6. **Launch the Application:
+6. **Launch the Application:**
    Start the Laravel development server:
    ```bash
    php artisan serve
