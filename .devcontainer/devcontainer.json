@@ -1,0 +1,25 @@
+{
+  "name": "Laravel 10",
+  "image": "mcr.microsoft.com/devcontainers/php:8.2",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    },
+    "ghcr.io/devcontainers/features/composer:1": {}
+  },
+
+  "postCreateCommand": "composer install && npm install",
+
+  "forwardPorts": [8000, 5173],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-debug",
+        "bradlc.vscode-tailwindcss"
+      ]
+    }
+  }
+}
