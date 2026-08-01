@@ -56,13 +56,19 @@ cp .env.example .env
 php artisan key:generate
 ```
 4. **Set up the Database:**
+   
    Open your .env file and configure your database connection details:
    
    DB_CONNECTION=mysql
+   
    DB_HOST=127.0.0.1
+   
    DB_PORT=3306
+   
    DB_DATABASE=maintenance_db
+   
    DB_USERNAME=root
+   
    DB_PASSWORD=
 
 6. **Run Migrations & Seeders:**
