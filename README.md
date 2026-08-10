@@ -97,6 +97,14 @@ php artisan key:generate
 
 * Utilized Bootstrap components (modals, alerts, tables) alongside Livewire events to create a highly responsive user experience.
 
+---
+
+## 👨‍💻 Author
+
+Sena Adane
+
+---
+
 ## 📝 License
 
 This project is open-source and available under the MIT License.
